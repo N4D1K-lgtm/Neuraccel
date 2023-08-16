@@ -1,0 +1,21 @@
+[package]
+name = "neuracl"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["cuda"]
+cuda = []
+opencl = []
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+cc = "1.0"
+bindgen = "0.66.1"
+clang-sys = "1.6.1"
+
+[lib]
+name = "neuracl"
+path = "src/lib.rs"
