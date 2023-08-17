@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/N4D1K-lgtm/Neuracl"><img src="./assets/neuracl.png" alt="Neuracl" width="200"></a>
+  <a href="https://github.com/N4D1K-lgtm/Neuracl"><img src="https://github.com/N4D1K-lgtm/Neuracl/blob/9d10b5c23c1d8027b28ece3960a814de0fbe84b4/assets/Neuracl.png" alt="Neuracl" width="200"></a>
   <br>
   Neuracl
   <br>
