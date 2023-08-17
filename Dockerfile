@@ -19,8 +19,7 @@ RUN apt-get install -y llvm clang
 WORKDIR /usr/src/app
 
 # Copy the Cargo manifest files
-COPY Cargo.toml Cargo.lock ./
-RUN cat Cargo.toml
+COPY Cargo.toml ./
 
 # Cache dependencies
 RUN cargo fetch
