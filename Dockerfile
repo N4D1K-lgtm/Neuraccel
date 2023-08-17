@@ -20,7 +20,6 @@ WORKDIR /usr/src/app
 
 # Copy the Cargo manifest files
 COPY Cargo.toml Cargo.lock ./
-RUN cat Cargo.toml
 
 # Cache dependencies
 RUN cargo fetch
