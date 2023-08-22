@@ -1,14 +1,21 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+// lib.rs
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+// External dependencies
+extern crate blastoff;
+extern crate cudnn;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+// Internal modules
+mod decoding;
+mod encoding;
+mod kernels;
+mod neurons;
+mod simulation;
+mod synapses;
+mod utils;
+
+// Public interfaces
+pub use decoding::*;
+pub use encoding::*;
+pub use neurons::*;
+pub use simulation::*;
+pub use synapses::*;

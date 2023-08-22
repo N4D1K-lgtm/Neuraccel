@@ -9,12 +9,11 @@ cuda = []
 opencl = []
 
 [dependencies]
-libc = "0.2"
+cudnn = { git = "https://github.com/Rust-GPU/Rust-CUDA", package = "cudnn" }
+blastoff = { git = "https://github.com/Rust-GPU/Rust-CUDA", package = "blastoff" }
+cuda_std = { git = "https://github.com/Rust-GPU/Rust-CUDA", package = "cuda_std" }
+cust = { git = "https://github.com/Rust-GPU/Rust-CUDA", package = "cust" }
 
-[build-dependencies]
-cc = "1.0"
-bindgen = "0.66.1"
-clang-sys = "1.6.1"
 
 [lib]
 name = "neuracl"
